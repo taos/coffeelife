@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+<html>
+<head>
+  <title>Game of Life - Tao + Milo </title>
+
+  <script type="text/javascript" src="javascripts/game_of_life.js">
+  </script>
+
+  <style type="text/css">
+    body {
+      background-color: rgb(38, 38, 38);
+    }
+
+    canvas {
+      border: 1px solid rgba(242, 198, 65, 0.5);
+      margin: 50px auto 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+    gol = new GameOfLife();
+  </script>
+  <button onclick="gol.start();">Start</button>
+  <button onclick="gol.stop();">Stop</button>
+  <button onclick="gol.clear();">Clear</button>
+  <button onclick="gol.reseed();">Reseed</button>
+</body>
+</html>
